@@ -10,6 +10,8 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:jsx-a11y/recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:import/recommended',
+    'plugin:import/typescript',
     'plugin:prettier/recommended',
   ],
   ignorePatterns: ['build', 'dist', 'node_modules'],
@@ -33,6 +35,33 @@ module.exports = {
         singleQuote: true,
         tabWidth: 2,
         trailingComma: 'all',
+      },
+    ],
+    '@typescript-eslint/no-unused-vars': 'warn',
+    'import/no-duplicates': ['error', { 'prefer-inline': true }],
+    'import/newline-after-import': ['error', { count: 1 }],
+    'import/order': [
+      'error',
+      {
+        alphabetize: {
+          caseInsensitive: true,
+          order: 'asc',
+        },
+        groups: [
+          'builtin',
+          'external',
+          ['internal', 'parent', 'sibling', 'index'],
+        ],
+        'newlines-between': 'always',
+        pathGroups: [
+          {
+            pattern: '@/**',
+            group: 'internal',
+            position: 'before',
+          },
+        ],
+        distinctGroup: false,
+        pathGroupsExcludedImportTypes: ['object', 'type'],
       },
     ],
     'jsx-a11y/alt-text': ['warn', { elements: ['img'], img: ['Image'] }],

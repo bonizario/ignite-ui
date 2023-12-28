@@ -1,0 +1,30 @@
+{
+  "name": "@ignite-ui/tokens",
+  "version": "1.0.0",
+  "description": "Ignite UI design tokens",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
+    "lint": "eslint 'src/**/*.{ts,tsx,d.ts}' --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bonizario/ignite-ui.git"
+  },
+  "keywords": [
+    "ignite-ui",
+    "design",
+    "tokens"
+  ],
+  "author": "bonizario",
+  "license": "MIT",
+  "devDependencies": {
+    "@ignite-ui/eslint-config": "workspace:*",
+    "@ignite-ui/ts-config": "workspace:*",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  }
+}

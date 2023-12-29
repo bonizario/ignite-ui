@@ -8,6 +8,9 @@ const stories: Meta<ButtonProps> = {
   args: {
     children: 'Send',
   },
+  argTypes: {
+    onClick: { action: 'clicked' },
+  },
 };
 
 export default stories;

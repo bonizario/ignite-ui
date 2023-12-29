@@ -23,8 +23,7 @@
 
     "skipLibCheck": true,
 
-    "preserveWatchOutput": true,
-    "preserveSymlinks": true
+    "preserveWatchOutput": true
   },
   "exclude": ["node_modules"]
 }

@@ -1,13 +1,15 @@
 import { Heading, type HeadingProps } from '@ignite-ui/react';
 import type { Meta, StoryObj } from '@storybook/react';
 
-export default {
+const stories: Meta<HeadingProps> = {
   title: 'Typography/Heading',
   component: Heading,
   args: {
     children: 'Custom title',
   },
-} as Meta<HeadingProps>;
+};
+
+export default stories;
 
 export const Primary: StoryObj<HeadingProps> = {};
 

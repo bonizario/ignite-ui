@@ -1,14 +1,16 @@
-import { Text, TextProps } from '@ignite-ui/react';
+import { Text, type TextProps } from '@ignite-ui/react';
 import type { Meta, StoryObj } from '@storybook/react';
 
-export default {
+const stories: Meta<TextProps> = {
   title: 'Typography/Text',
   component: Text,
   args: {
     children:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro reprehenderit est veniam? Rem recusandae sint perspiciatis debitis corrupti. Deserunt neque exercitationem illo voluptatum laudantium culpa suscipit accusantium blanditiis voluptas numquam.',
   },
-} as Meta<TextProps>;
+};
+
+export default stories;
 
 export const Primary: StoryObj<TextProps> = {};
 

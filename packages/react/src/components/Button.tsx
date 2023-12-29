@@ -13,7 +13,7 @@ export const Button = styled('button', {
   fontWeight: '$medium',
   fontFamily: '$default',
   textAlign: 'center',
-  minWidth: 120,
+  minWidth: '$20',
   boxSizing: 'border-box',
   padding: '0 $4',
 

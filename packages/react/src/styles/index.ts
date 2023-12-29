@@ -21,6 +21,8 @@ export const {
 } = createStitches({
   themeMap: {
     ...defaultThemeMap,
+    minHeight: 'space',
+    minWidth: 'space',
     height: 'space',
     width: 'space',
   },

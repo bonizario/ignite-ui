@@ -2,7 +2,7 @@ import { Button, type ButtonProps } from '@ignite-ui/react';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta<ButtonProps> = {
-  title: 'Button',
+  title: 'Form/Button',
   component: Button,
   args: {
     children: 'Enviar',

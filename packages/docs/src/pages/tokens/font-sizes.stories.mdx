@@ -1,0 +1,14 @@
+import { fontSizes } from '@ignite-ui/tokens';
+import { Meta, Unstyled } from '@storybook/blocks';
+
+import { TokensGrid } from '../../components/TokensGrid';
+
+<Meta title="Tokens/Font Sizes" />
+
+# Font Sizes
+
+Font sizes are used to define the size of text. They are defined in `rem` units, which are relative to the root font size of `16px`.
+
+<Unstyled>
+  <TokensGrid tokens={fontSizes} hasRemValue />
+</Unstyled>

@@ -1,3 +1,12 @@
 {
-  "extends": ["@ignite-ui/eslint-config", "plugin:storybook/recommended"]
+  "extends": ["plugin:storybook/recommended", "@ignite-ui/eslint-config"],
+  "ignorePatterns": ["!.storybook"],
+  "rules": {
+    "storybook/no-uninstalled-addons": [
+      "error",
+      {
+        "packageJsonLocation": "./packages/docs/package.json"
+      }
+    ]
+  }
 }

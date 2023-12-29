@@ -2,6 +2,10 @@ import { ComponentProps, ElementType } from 'react';
 
 import { styled } from '../styles';
 
+export type TextProps = ComponentProps<typeof Text> & {
+  as?: ElementType;
+};
+
 export const Text = styled('p', {
   margin: 0,
   fontFamily: '$default',
@@ -30,7 +34,3 @@ export const Text = styled('p', {
     size: 'md',
   },
 });
-
-export type TextProps = ComponentProps<typeof Text> & {
-  as?: ElementType;
-};

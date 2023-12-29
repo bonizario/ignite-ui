@@ -2,6 +2,10 @@ import { ComponentProps, ElementType } from 'react';
 
 import { styled } from '../styles';
 
+export type HeadingProps = ComponentProps<typeof Heading> & {
+  as?: ElementType;
+};
+
 export const Heading = styled('h2', {
   fontFamily: '$default',
   lineHeight: '$shorter',
@@ -25,7 +29,3 @@ export const Heading = styled('h2', {
     size: 'md',
   },
 });
-
-export type HeadingProps = ComponentProps<typeof Heading> & {
-  as?: ElementType;
-};

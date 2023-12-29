@@ -3,6 +3,8 @@ import { ComponentProps } from 'react';
 
 import { AvatarContainer, AvatarFallback, AvatarImage } from './styles';
 
+export type AvatarProps = ComponentProps<typeof AvatarImage>;
+
 export function Avatar(props: AvatarProps) {
   return (
     <AvatarContainer>
@@ -14,5 +16,3 @@ export function Avatar(props: AvatarProps) {
     </AvatarContainer>
   );
 }
-
-export type AvatarProps = ComponentProps<typeof AvatarImage>;

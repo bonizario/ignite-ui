@@ -1,5 +1,5 @@
 {
-  "name": "@ignite-ui/react",
+  "name": "@bonizario-ignite-ui/react",
   "version": "1.0.0",
   "description": "Ignite UI react components",
   "main": "./dist/index.js",
@@ -24,9 +24,9 @@
     "phosphor-react": "^1.4.1"
   },
   "devDependencies": {
-    "@ignite-ui/eslint-config": "workspace:*",
-    "@ignite-ui/tokens": "workspace:*",
-    "@ignite-ui/ts-config": "workspace:*",
+    "@bonizario-ignite-ui/eslint-config": "workspace:*",
+    "@bonizario-ignite-ui/tokens": "workspace:*",
+    "@bonizario-ignite-ui/ts-config": "workspace:*",
     "@types/react": "^18.2.46",
     "@types/react-dom": "^18.2.18",
     "react": "^18.2.0",

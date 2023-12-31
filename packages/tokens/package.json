@@ -1,5 +1,5 @@
 {
-  "name": "@ignite-ui/tokens",
+  "name": "@bonizario-ignite-ui/tokens",
   "version": "1.0.0",
   "description": "Ignite UI design tokens",
   "main": "./dist/index.js",
@@ -22,8 +22,8 @@
   "author": "bonizario",
   "license": "MIT",
   "devDependencies": {
-    "@ignite-ui/eslint-config": "workspace:*",
-    "@ignite-ui/ts-config": "workspace:*",
+    "@bonizario-ignite-ui/eslint-config": "workspace:*",
+    "@bonizario-ignite-ui/ts-config": "workspace:*",
     "tsup": "^8.0.1",
     "typescript": "^5.3.3"
   }

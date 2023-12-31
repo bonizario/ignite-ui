@@ -1,5 +1,5 @@
 {
-  "name": "@ignite-ui/docs",
+  "name": "@bonizario-ignite-ui/docs",
   "version": "1.0.0",
   "type": "module",
   "scripts": {
@@ -10,10 +10,10 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@ignite-ui/eslint-config": "workspace:*",
-    "@ignite-ui/react": "workspace:*",
-    "@ignite-ui/tokens": "workspace:*",
-    "@ignite-ui/ts-config": "workspace:*",
+    "@bonizario-ignite-ui/eslint-config": "workspace:*",
+    "@bonizario-ignite-ui/react": "workspace:*",
+    "@bonizario-ignite-ui/tokens": "workspace:*",
+    "@bonizario-ignite-ui/ts-config": "workspace:*",
     "phosphor-react": "^1.4.1",
     "polished": "^4.2.2",
     "react": "^18.2.0",

@@ -1,5 +1,5 @@
 {
-  "extends": ["plugin:storybook/recommended", "@ignite-ui/eslint-config"],
+  "extends": ["plugin:storybook/recommended", "@bonizario-ignite-ui/eslint-config"],
   "ignorePatterns": ["!.storybook"],
   "rules": {
     "storybook/no-uninstalled-addons": [

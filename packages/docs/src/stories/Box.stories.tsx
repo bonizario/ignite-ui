@@ -11,6 +11,13 @@ const stories: Meta<BoxProps> = {
       </>
     ),
   },
+  argTypes: {
+    children: {
+      control: {
+        type: null,
+      },
+    },
+  },
 };
 
 export default stories;

@@ -8,6 +8,13 @@ const stories: Meta<AvatarProps> = {
     src: 'https://github.com/bonizario.png',
     alt: 'Gabriel Bonizário',
   },
+  argTypes: {
+    src: {
+      control: {
+        type: 'text',
+      },
+    },
+  },
 };
 
 export default stories;

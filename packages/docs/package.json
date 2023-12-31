@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "storybook dev -p 6006 --no-open",
     "build": "storybook build --output-dir dist",
-    "lint": "eslint . --ext ts,tsx,d.ts --report-unused-disable-directives --max-warnings 0 --fix"
+    "lint": "eslint . --ext ts,tsx,d.ts --report-unused-disable-directives --max-warnings 0 --fix",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "license": "MIT",
   "dependencies": {
@@ -13,13 +14,13 @@
     "@ignite-ui/react": "workspace:*",
     "@ignite-ui/tokens": "workspace:*",
     "@ignite-ui/ts-config": "workspace:*",
-    "@storybook/addon-a11y": "^7.6.6",
     "phosphor-react": "^1.4.1",
     "polished": "^4.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@storybook/addon-a11y": "^7.6.6",
     "@storybook/addon-essentials": "^7.6.6",
     "@storybook/addon-interactions": "^7.6.6",
     "@storybook/addon-links": "^7.6.6",
@@ -28,6 +29,7 @@
     "@storybook/manager-api": "^7.6.6",
     "@storybook/react": "^7.6.6",
     "@storybook/react-vite": "^7.6.6",
+    "@storybook/storybook-deployer": "^2.8.16",
     "@storybook/test": "^7.6.6",
     "@storybook/theming": "^7.6.6",
     "@types/react": "^18.2.43",

@@ -9,6 +9,7 @@
     "deploy-storybook": "storybook-to-ghpages"
   },
   "license": "MIT",
+  "private": true,
   "dependencies": {
     "@bonizario-ignite-ui/eslint-config": "workspace:*",
     "@bonizario-ignite-ui/react": "workspace:*",

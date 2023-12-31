@@ -1,10 +1,25 @@
-import { Box, Text, TextInput, type TextInputProps } from '@bonizario-ignite-ui/react';
+import {
+  Box,
+  Text,
+  TextInput,
+  type TextInputProps,
+} from '@bonizario-ignite-ui/react';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const stories: Meta<TextInputProps> = {
   title: 'Form/Text Input',
   component: TextInput,
-  args: {},
+  args: {
+    size: 'md',
+  },
+  argTypes: {
+    size: {
+      options: ['sm', 'md'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+  },
   decorators: [
     (Story) => {
       return (
@@ -37,5 +52,6 @@ export const Disabled: StoryObj<TextInputProps> = {
 export const WithPrefix: StoryObj<TextInputProps> = {
   args: {
     prefix: 'call.com/',
+    placeholder: 'your-username',
   },
 };
